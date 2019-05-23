@@ -1,3 +1,10 @@
+def encrypt(text, rot):
+    encryptedText = ""
+    for char in text:
+        encryptedText += rotate_character(char, rot)
+
+    return encryptedText
+
 def rotate_character(char, rot):
 
     #We want everything that is not an alphabetic character to remain unchanged. 
@@ -36,7 +43,7 @@ def get_character_number(char):
     
 
 def main():
-    print (rotate_character("U", 5))
+    print (encrypt("Hello, World!", 5))
 
 if __name__ == "__main__":
     main()
