@@ -22,10 +22,19 @@ class CaesarPalaceBluesTests(unittest.TestCase):
         self.assertEqual(CaesarPalaceBlues.rotate_character("?", 7), "?", "Should be '?'")
 
     def test_get_lower_character_number(self):
-        self.assertEqual(CaesarPalaceBlues.get_character_number("e"), 4, "Should be 4")
+        self.assertEqual(CaesarPalaceBlues.alphabet_position("e"), 4, "Should be 4")
 
     def test_get_upper_character_number(self):
-        self.assertEqual(CaesarPalaceBlues.get_character_number("X"), 23, "Should be 23")
+        self.assertEqual(CaesarPalaceBlues.alphabet_position("X"), 23, "Should be 23")
+
+    def test_mixed_upper_and_lower_case(self):
+        self.assertEqual(CaesarPalaceBlues.encrypt("LaunchCode", 13), "YnhapuPbqr", "Should be 'YnhapuPbqr'")
+
+    def test_mixed_upper_and_lower_case_2(self):
+        self.assertEqual(CaesarPalaceBlues.encrypt("LaunchCode", 1), "MbvodiDpef", "Should be 'MbvodiDpef'")
+
+    def test_with_punctuation_and_space(self):
+        self.assertEqual(CaesarPalaceBlues.encrypt("Hello, World!", 5), "Mjqqt, Btwqi!", "Should be 'Mjqqt, Btwqi!'")
    
 
 if __name__ == "__main__":

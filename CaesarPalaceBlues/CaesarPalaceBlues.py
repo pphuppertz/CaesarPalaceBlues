@@ -11,7 +11,7 @@ def rotate_character(char, rot):
     if char.isalpha() == False:
         return char
 
-    charOrd = get_character_number(char)
+    charOrd = alphabet_position(char)
     
     newCharOrd = charOrd + rot
 
@@ -29,7 +29,7 @@ def rotate_character(char, rot):
         addValue = 97
     return chr(newCharOrd + addValue)
 
-def get_character_number(char):
+def alphabet_position(char):
     # We want the character numbering to start at zero for A or a, and to end at 25 for Z or z, in order to be able to, 
     # if our rotate value (rot) causes us to rollover to a, we can use the modulo function to get the number we need. 
     charOrd = ord(char)
@@ -43,7 +43,9 @@ def get_character_number(char):
     
 
 def main():
-    print (encrypt("Hello, World!", 5))
+    textToEncrypt = input("Type text to encrypt: ")
+    rotationAmount = int(input("Enter rotation amount: "))
+    print (encrypt(textToEncrypt, rotationAmount))
 
 if __name__ == "__main__":
     main()
