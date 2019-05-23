@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CaesarPalaceBlues", "CaesarPalaceBlues\CaesarPalaceBlues.pyproj", "{E4A8B718-CBB9-4952-BB5A-E1563B8837D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4A8B718-CBB9-4952-BB5A-E1563B8837D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A8B718-CBB9-4952-BB5A-E1563B8837D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5664E8C-8A37-4618-8D17-B884006C98E3}
+	EndGlobalSection
+EndGlobal
